@@ -7,6 +7,89 @@
     <title>GIT Practice</title>
   </head>
   <body>
+    <!-- Navbar -->
+    <nav class="bg-gray-800 text-white">
+      <div
+        class="container mx-auto flex justify-between items-center py-4 px-6"
+      >
+        <!-- Logo -->
+        <div class="flex items-center space-x-2">
+          <span class="text-2xl font-bold text-teal-400">Brand</span>
+        </div>
+
+        <!-- Links -->
+        <div class="hidden md:flex space-x-8">
+          <a href="#" class="hover:text-teal-400 transition-colors">Home</a>
+          <a href="#" class="hover:text-teal-400 transition-colors">About</a>
+          <a href="#" class="hover:text-teal-400 transition-colors">Services</a>
+          <a href="#" class="hover:text-teal-400 transition-colors">Contact</a>
+        </div>
+
+        <!-- Search Bar -->
+        <div
+          class="hidden lg:flex items-center space-x-2 bg-gray-700 px-3 py-2 rounded"
+        >
+          <input
+            type="text"
+            placeholder="Search..."
+            class="bg-transparent border-none focus:outline-none text-sm placeholder-gray-400 text-white"
+          />
+          <button class="text-teal-400 hover:text-teal-300 transition-colors">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M10 14l2 2m0-2a6 6 0 1112 0 6 6 0 01-12 0z"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Hamburger Menu -->
+        <button
+          class="block md:hidden text-gray-300 hover:text-white focus:outline-none"
+          id="menu-toggle"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="md:hidden bg-gray-700 px-6 py-4 hidden" id="mobile-menu">
+        <a href="#" class="block py-2 hover:text-teal-400 transition-colors"
+          >Home</a
+        >
+        <a href="#" class="block py-2 hover:text-teal-400 transition-colors"
+          >About</a
+        >
+        <a href="#" class="block py-2 hover:text-teal-400 transition-colors"
+          >Services</a
+        >
+        <a href="#" class="block py-2 hover:text-teal-400 transition-colors"
+          >Contact</a
+        >
+      </div>
+    </nav>
     <script src="script.js"></script>
   </body>
 </html>
